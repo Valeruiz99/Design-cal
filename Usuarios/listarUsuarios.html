@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>index</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+      <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+  </head>
+  
+
+  <body>
+    <div id="banner">
+      <div id="espacio"></div>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand">
+          <img class="logo" src="../access/image/logo.png" alt="logo" >
+        </a>
+        <button class="navbar-toggler" data-target="menu" data-toggle="collapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="../index.html">Inicio <span class="sr-only"></span></a>
+            </li>
+          <li>
+            <div class="dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="desplegable" href="#">
+                Patrones
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="../Patrones/cargarPatrones.html">Cargar</a>
+                <a class="dropdown-item" href="../Patrones/listarPatrones.html">Listar</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="desplegable" href="#">
+                Catálogos
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="../Catalogos/listar.html">Listar Catálogo</a>
+                <a class="dropdown-item" href="../Catalogos/mujer.html">Mujer</a>
+                <a class="dropdown-item" href="../Catalogos/hombre.html">Hombre</a>
+                <a class="dropdown-item" href="../Catalogos/ninos.html">Niños</a>
+                <a class="dropdown-item" href="../Catalogos/bebes.html">Bebés</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="desplegable" href="#">
+                Usuarios
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="registroUsuarios.html">Ingresar</a>
+                <a class="dropdown-item" href="listarUsuarios.html">Listar</a>
+              </div>
+            </div>
+          </li>
+          <!--<li>
+            <div class="dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="desplegable" href="#">
+                Clientes
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="../Usuarios/registroUsuarios.html">Ingresar</a>
+                <a class="dropdown-item" href="../Clientes/listarClientes.html">Listar</a>
+              </div>
+            </div>
+          </li>-->
+          <li>
+            <div class="dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="desplegable" href="#">
+                Correos
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="../Correos/crearCorreos.html">Crear</a>
+                <a class="dropdown-item" href="../Correos/listarCorreos.html">Listar</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="desplegable" href="#">
+                Ventas
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="../Ventas/reporteVentas.html">Generar Reporte</a>
+                <a class="dropdown-item" href="../Ventas/listarventas.html">Listar Ventas</a>
+                <a class="dropdown-item" href="../Ventas/listarReportes.html">Listar Reportes</a>
+              </div>
+            </div>
+          </li>
+         <!-- <li>
+            <div class="dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="desplegable" href="#">
+                Diseñadores Aliados
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="../Diseñadores/ingresarDisenador.html">Ingresar</a>
+                <a class="dropdown-item" href="../Diseñadores/listarDisenadores.html">Listar</a>
+              </div>
+            </div>
+          </li>-->
+          <li>
+            <div class="dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="desplegable" href="#">
+                Encargos
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="../Encargos/ingresarEncargo.html">Ingresar</a>
+                <a class="dropdown-item" href="../Encargos/listarEncargos.html">Listar</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div id="inicio">
+          <div class="dropdown">
+            <a class="nav-link dropdown-toggle sesion" data-toggle="dropdown" data-target="desplegable" href="#">
+              Iniciar Sesión
+            </a>
+            <div id="sesion">
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <form>
+                  <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Correo</label>
+                    <div class="col-sm-10">
+                      <input type="email" class="form-control" id="inputEmail3" placeholder="Correo Electrónico" required>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Contraseña</label>
+                    <div class="col-sm-10">
+                      <input type="password" class="form-control" id="inputPassword3" placeholder="Contraseña" required>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-sm-10">
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="checkbox"> Recuérdame
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-sm-10">
+                      <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <a id="registro" href="#">Registrarse</a>
+          <a href="../Compras/CarritoCompras.html"><ion-icon name="cart" id="carrito"></ion-icon></a>
+
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div  class="container">
+    <h2>Lista de Usuarios</h2>
+    <table id="tablaUsuarios" class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th>Cédula</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Correo</th>
+            <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1036685537</td>
+            <td>Valeria</td>
+            <td>Bustamante</td>
+            <td>vbustamante8@misena.edu.co</td>
+            <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal1"><img class="eye" src="../access/image/eye.svg" alt=""></button>
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModaledit1"><img class="edit" src="../access/image/edit.svg" alt=""></button>
+            <button type="button" class="btn btn-danger"><img class="trash" src="../access/image/trash-2.png" alt=""></button></td>
+          </tr>
+          <tr>
+            <td>1128430486</td>
+            <td>Stiven</td>
+            <td>Calle</td>
+            <td>stivencalle3107@gmail.com</td>
+            <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2"><img class="eye" src="../access/image/eye.svg" alt=""></button>
+            <button type="button" class="btn btn-warning"data-toggle="modal" data-target="#myModaledit2"><img class="edit" src="../access/image/edit.svg" alt=""></button>
+            <button type="button" class="btn btn-danger"><img class="trash" src="../access/image/trash-2.png" alt=""></button></td>
+          </tr>
+          <tr>
+            <td>43840845</td>
+            <td>Liliana</td>
+            <td>Ruiz</td>
+            <td>ruizt_3@hotmail.com</td>
+            <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal3"><img class="eye" src="../access/image/eye.svg" alt=""></button>
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModaledit3"><img class="edit" src="../access/image/edit.svg" alt=""></button>
+            <button type="button" class="btn btn-danger"><img class="trash" src="../access/image/trash-2.png" alt=""></button></td>  
+          </tr>
+          <tr>
+            <td>21443073</td>
+            <td>Ofelia</td>
+            <td>Taborda</td>
+            <td>ofelia4435@hotmail.com</td>
+            <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal4"><img class="eye" src="../access/image/eye.svg" alt=""></button>
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModaledit4"><img class="edit" src="../access/image/edit.svg" alt=""></button>
+            <button type="button" class="btn btn-danger"><img class="trash" src="../access/image/trash-2.png" alt=""></button></td>  
+          </tr>
+          <tr>
+            <td>12345678</td>
+            <td>Jesús</td>
+            <td>Cardona</td>
+            <td>cardona123@hotmail.com</td>
+            <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal5"><img class="eye" src="../access/image/eye.svg" alt=""></button>
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModaledit5"><img class="edit" src="../access/image/edit.svg" alt=""></button>
+            <button type="button" class="btn btn-danger"><img class="trash" src="../access/image/trash-2.png" alt=""></button></td>  
+          </tr>
+          <tr>
+            <td>98745632</td>
+            <td>Maria</td>
+            <td>Ruiz</td>
+            <td>marir45@hotmail.com</td>
+            <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal6"><img class="eye" src="../access/image/eye.svg" alt=""></button>
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModaledit6"><img class="edit" src="../access/image/edit.svg" alt=""></button>
+            <button type="button" class="btn btn-danger"><img class="trash" src="../access/image/trash-2.png" alt=""></button></td>  
+          </tr>
+          <tr>
+            <td>2468101214</td>
+            <td>Juliana</td>
+            <td>Madrigal</td>
+            <td>julima2810@gmail.com</td>
+            <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal7"><img class="eye" src="../access/image/eye.svg" alt=""></button>
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModaledit7"><img class="edit" src="../access/image/edit.svg" alt=""></button>
+            <button type="button" class="btn btn-danger"><img class="trash" src="../access/image/trash-2.png" alt=""></button></td>  
+          </tr>
+          <tr>
+            <td>0315791113</td>
+            <td>Jorge</td>
+            <td>Taborda</td>
+            <td>jortaborda@gmail.com</td>
+            <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal8"><img class="eye" src="../access/image/eye.svg" alt=""></button>
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModaledit8"><img class="edit" src="../access/image/edit.svg" alt=""></button>
+            <button type="button" class="btn btn-danger"><img class="trash" src="../access/image/trash-2.png" alt=""></button></td>  
+          </tr>
+          <tr>
+            <td>2589631478</td>
+            <td>Salomé</td>
+            <td>Córdoba</td>
+            <td>salitocor@hotmail.com</td>
+            <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal9"><img class="eye" src="../access/image/eye.svg" alt=""></button>
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModaledit9"><img class="edit" src="../access/image/edit.svg" alt=""></button>
+            <button type="button" class="btn btn-danger"><img class="trash" src="../access/image/trash-2.png" alt=""></button></td>  
+          </tr>
+          <tr>
+            <td>7458963521</td>
+            <td>Emiliano</td>
+            <td>Bustamante</td>
+            <td>emibustamante@hotmail.com</td>
+            <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal10"><img class="eye" src="../access/image/eye.svg" alt=""></button>
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModaledit0"><img class="edit" src="../access/image/edit.svg" alt=""></button>
+            <button type="button" class="btn btn-danger"><img class="trash" src="../access/image/trash-2.png" alt=""></button></td>  
+          </tr>
+          <tr>
+            <td>1456297452</td>
+            <td>Martín</td>
+            <td>Muñoz</td>
+            <td>tintin2019@hotmail.com</td>
+            <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal11"><img class="eye" src="../access/image/eye.svg" alt=""></button>
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModaledit11"><img class="edit" src="../access/image/edit.svg" alt=""></button>
+            <button type="button" class="btn btn-danger"><img class="trash" src="../access/image/trash-2.png" alt=""></button></td>  
+          </tr>
+          <tr>
+            <td>7898854122</td>
+            <td>Adrian</td>
+            <td>Ruiz</td>
+            <td>adriancito@hotmail.com</td>
+            <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal12" ><img class="eye" src="../access/image/eye.svg" alt=""></button>
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModaledit12"><img class="edit" src="../access/image/edit.svg" alt=""></button>
+            <button type="button" class="btn btn-danger"><img class="trash" src="../access/image/trash-2.png" alt=""></button></td>  
+          </tr>
+        </tbody>
+      </table>
+      <div class="container">
+        <div class="modal fade" id="myModal1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>      
+              <div class="modal-body">
+                <div class="formulario">
+                  <form>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" value="Valeria" readonly><br>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" value="Bustamante" readonly><br>
+                    <label for="cedula">Cédula</label>
+                    <input type="text" name="cedula" id="cedula" value="1036685537" readonly><br>
+                    <label for="correo">Email</label>
+                    <input type="email" name="correo" id="correo" value="vbustamante8@misena.edu.co" readonly><br>
+                    <label for="celular">Celular</label>
+                    <input type="text" name="celular" id="celular" value="3014247110" readonly><br>
+                    <label for="rol">Rol</label>
+                    <input type="text" name="rol" id="rol" value="Administrador" readonly>
+                  </form>
+                </div>
+              </div>             
+            </div>
+          </div>
+        </div> 
+      </div>
+      <div class="container">
+        <div class="modal fade" id="myModal2">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>      
+              <div class="modal-body">
+                <div class="formulario">
+                  <form>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" value="Stiven" readonly><br>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" value="Calle"readonly><br>
+                    <label for="cedula">Cédula</label>
+                    <input type="text" name="cedula" id="cedula" value="1128430486" readonly><br>
+                    <label for="correo">Email</label>
+                    <input type="email" name="correo" id="correo" value="stivencalle3107@gmail.com" readonly><br>
+                    <label for="celular">Celular</label>
+                    <input type="text" name="celular" id="celular" value="3005239011" readonly><br>
+                    <label for="rol">Rol</label>
+                    <input type="text" name="rol" id="rol" value="Cliente">
+                  </form>
+                </div>
+              </div>             
+            </div>
+          </div>
+        </div> 
+      </div>
+      <div class="container">
+        <div class="modal fade" id="myModal3">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>      
+              <div class="modal-body">
+                <div class="formulario">
+                  <form>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" value="Liliana" readonly><br>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" value="Ruiz"readonly><br>
+                    <label for="cedula">Cédula</label>
+                    <input type="text" name="cedula" id="cedula" value="43840845"readonly><br>
+                    <label for="correo">Email</label>
+                    <input type="email" name="correo" id="correo" value="ruizt_3@hotmail.com"readonly><br>
+                    <label for="celular">Celular</label>
+                    <input type="text" name="celular" id="celular" value="3003530517" readonly><br>
+                    <label for="rol">Rol</label>
+                    <input type="text" name="rol" id="rol" value="Diseñador" readonly>
+                  </form>
+                </div>
+              </div>             
+            </div>
+          </div>
+        </div> 
+      </div>
+      <div class="container">
+        <div class="modal fade" id="myModal4">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>      
+              <div class="modal-body">
+                <div class="formulario">
+                  <form>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" value="Ofelia" readonly><br>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" value="Taborda"readonly><br>
+                    <label for="cedula">Cédula</label>
+                    <input type="text" name="cedula" id="cedula" value="21443073"readonly><br>
+                    <label for="correo">Email</label>
+                    <input type="email" name="correo" id="correo" value="ofelia4435@hotmail.com"readonly><br>
+                    <label for="celular">Celular</label>
+                    <input type="text" name="celular" id="celular" value="3122589665"readonly> <br>
+                    <label for="rol">Rol</label>
+                    <input type="text" name="rol" id="rol" value="Cliente"readonly>
+                  </form>
+                </div>
+              </div>             
+            </div>
+          </div>
+        </div> 
+      </div>
+      <div class="container">
+        <div class="modal fade" id="myModal5">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>      
+              <div class="modal-body">
+                <div class="formulario">
+                  <form>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" value="Jesús" readonly><br>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" value="Cardona"readonly><br>
+                    <label for="cedula">Cédula</label>
+                    <input type="text" name="cedula" id="cedula" value="12345678"readonly><br>
+                    <label for="correo">Email</label>
+                    <input type="email" name="correo" id="correo" value="cardona123@hotmail.com"readonly><br>
+                    <label for="celular">Celular</label>
+                    <input type="text" name="celular" id="celular" value="3125548552"readonly> <br>
+                    <label for="rol">Rol</label>
+                    <input type="text" name="rol" id="rol" value="Cliente"readonly>
+                  </form>
+                </div>
+              </div>             
+            </div>
+          </div>
+        </div> 
+      </div>
+      <div class="container">
+        <div class="modal fade" id="myModal6">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>      
+              <div class="modal-body">
+                <div class="formulario">
+                  <form>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" value="Maria" readonly><br>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" value="Ruiz"readonly><br>
+                    <label for="cedula">Cédula</label>
+                    <input type="text" name="cedula" id="cedula" value="98745632"readonly><br>
+                    <label for="correo">Email</label>
+                    <input type="email" name="correo" id="correo" value="marir45@hotmail.com"readonly><br>
+                    <label for="celular">Celular</label>
+                    <input type="text" name="celular" id="celular" value="3005623211"readonly> <br>
+                    <label for="rol">Rol</label>
+                    <input type="text" name="rol" id="rol" value="Cliente"readonly>
+                  </form>
+                </div>
+              </div>             
+            </div>
+          </div>
+        </div> 
+      </div>
+      <div class="container">
+        <div class="modal fade" id="myModal7">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>      
+              <div class="modal-body">
+                <div class="formulario">
+                  <form>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" value="Juliana" readonly><br>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" value="Madrigal"readonly><br>
+                    <label for="cedula">Cédula</label>
+                    <input type="text" name="cedula" id="cedula" value="2468101214"readonly><br>
+                    <label for="correo">Email</label>
+                    <input type="email" name="correo" id="correo" value="julima2810@gmail.com"readonly><br>
+                    <label for="celular">Celular</label>
+                    <input type="text" name="celular" id="celular" value="3114552000"readonly> <br>
+                    <label for="rol">Rol</label>
+                    <input type="text" name="rol" id="rol" value="Cliente"readonly>
+                  </form>
+                </div>
+              </div>             
+            </div>
+          </div>
+        </div> 
+      </div>
+      <div class="container">
+        <div class="modal fade" id="myModal8">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>      
+              <div class="modal-body">
+                <div class="formulario">
+                  <form>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" value="Jorge" readonly><br>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" value="Taborda"readonly><br>
+                    <label for="cedula">Cédula</label>
+                    <input type="text" name="cedula" id="cedula" value="0315791113"readonly><br>
+                    <label for="correo">Email</label>
+                    <input type="email" name="correo" id="correo" value="jortaborda@gmail.com"readonly><br>
+                    <label for="celular">Celular</label>
+                    <input type="text" name="celular" id="celular" value="3054452203"readonly> <br>
+                    <label for="rol">Rol</label>
+                    <input type="text" name="rol" id="rol" value="Cliente" readonly>
+                  </form>
+                </div>
+              </div>             
+            </div>
+          </div>
+        </div> 
+      </div>
+      <div class="container">
+        <div class="modal fade" id="myModal9">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>      
+              <div class="modal-body">
+                <div class="formulario">
+                  <form>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" value="Salomé" readonly><br>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" value="Córdoba"readonly><br>
+                    <label for="cedula">Cédula</label>
+                    <input type="text" name="cedula" id="cedula" value="2589631478"readonly><br>
+                    <label for="correo">Email</label>
+                    <input type="email" name="correo" id="correo" value="salitocor@hotmail.com"readonly><br>
+                    <label for="celular">Celular</label>
+                    <input type="text" name="celular" id="celular" value="3129985569"readonly> <br>
+                    <label for="rol">Rol</label>
+                    <input type="text" name="rol" id="rol" value="Cliente" readonly>
+                  </form>
+                </div>
+              </div>             
+            </div>
+          </div>
+        </div> 
+      </div>
+      <div class="container">
+        <div class="modal fade" id="myModal10">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>      
+              <div class="modal-body">
+                <div class="formulario">
+                  <form>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" value="Emiliano" readonly><br>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" value="Bustamante"readonly><br>
+                    <label for="cedula">Cédula</label>
+                    <input type="text" name="cedula" id="cedula" value="7458963521"readonly><br>
+                    <label for="correo">Email</label>
+                    <input type="email" name="correo" id="correo" value="emibustamante@hotmail.com"readonly><br>
+                    <label for="celular">Celular</label>
+                    <input type="text" name="celular" id="celular" value="3104474410"readonly> <br>
+                    <label for="rol">Rol</label>
+                    <input type="text" name="rol" id="rol" value="Cliente"readonly>
+                  </form>
+                </div>
+              </div>             
+            </div>
+          </div>
+        </div> 
+      </div>
+      <div class="container">
+        <div class="modal fade" id="myModal11">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>      
+              <div class="modal-body">
+                <div class="formulario">
+                  <form>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" value="Martín" readonly><br>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" value="Muñoz"readonly><br>
+                    <label for="cedula">Cédula</label>
+                    <input type="text" name="cedula" id="cedula" value="1456297452"readonly><br>
+                    <label for="correo">Email</label>
+                    <input type="email" name="correo" id="correo" value="tintin2019@hotmail.com"readonly><br>
+                    <label for="celular">Celular</label>
+                    <input type="text" name="celular" id="celular" value="3195568800"readonly> <br>
+                    <label for="rol">Rol</label>
+                    <input type="text" name="rol" id="rol" value="Cliente"readonly>
+                  </form>
+                </div>
+              </div>             
+            </div>
+          </div>
+        </div> 
+      </div>
+      <div class="container">
+        <div class="modal fade" id="myModal12">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>      
+              <div class="modal-body">
+                <div class="formulario">
+                  <form>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" value="Adrian" readonly><br>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" value="Ruiz"readonly><br>
+                    <label for="cedula">Cédula</label>
+                    <input type="text" name="cedula" id="cedula" value="7898854122"readonly><br>
+                    <label for="correo">Email</label>
+                    <input type="email" name="correo" id="correo" value="adriancito@hotmail.com"readonly><br>
+                    <label for="celular">Celular</label>
+                    <input type="text" name="celular" id="celular" value="3122066548"readonly> <br>
+                    <label for="rol">Rol</label>
+                    <input type="text" name="rol" id="rol" value="Cliente">
+                  </form>
+                </div>
+              </div>             
+            </div>
+          </div>
+        </div> 
+      </div>
+      <div class="container">
+        <div class="modal fade" id="myModaledit1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>      
+              <div class="modal-body">
+                <div class="formulario">
+                  <form>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" value="Valeria"><br>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" value="Bustamante"><br>
+                    <label for="cedula">Cédula</label>
+                    <input type="text" name="cedula" id="cedula" value="1036685537" readonly><br>
+                    <label for="correo">Email</label>
+                    <input type="email" name="correo" id="correo" value="vbustamante8@misena.edu.co"><br>
+                    <label for="celular">Celular</label>
+                    <input type="text" name="celular" id="celular" value="3014247110"><br>
+                    <select class="custom-select rol">
+                      <option selected>Rol</option>
+                      <option value="1">Cliente</option>
+                      <option value="2">Diseñador</option>
+                      <option value="3">Administrador</option>
+                    </select>
+                  </form>
+                </div>
+              </div>             
+            </div>
+          </div>
+        </div> 
+      </div>
+      <div class="container">
+        <div class="modal fade" id="myModaledit2">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>      
+              <div class="modal-body">
+                <div class="formulario">
+                  <form>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" value="Stiven"><br>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" value="Calle"><br>
+                    <label for="cedula">Cédula</label>
+                    <input type="text" name="cedula" id="cedula" value="1128430486" readonly><br>
+                    <label for="correo">Email</label>
+                    <input type="email" name="correo" id="correo" value="stivencalle3107@gmail.com"><br>
+                    <label for="celular">Celular</label>
+                    <input type="text" name="celular" id="celular" value="3005239011"> <br>
+                    <select class="custom-select rol">
+                      <option selected>Rol</option>
+                      <option value="1">Cliente</option>
+                      <option value="2">Diseñador</option>
+                      <option value="3">Administrador</option>
+                    </select>
+                  </form>
+                </div>
+              </div>             
+            </div>
+          </div>
+        </div> 
+      </div>
+      <div class="container">
+        <div class="modal fade" id="myModaledit3">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>      
+              <div class="modal-body">
+                <div class="formulario">
+                  <form>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" value="Liliana"><br>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" value="Ruiz"><br>
+                    <label for="cedula">Cédula</label>
+                    <input type="text" name="cedula" id="cedula" value="43840845" readonly><br>
+                    <label for="correo">Email</label>
+                    <input type="email" name="correo" id="correo" value="ruizt_3@hotmail.com"><br>
+                    <label for="celular">Celular</label>
+                    <input type="text" name="celular" id="celular" value="3003570517"><br>
+                    <select class="custom-select rol">
+                      <option selected>Rol</option>
+                      <option value="1">Cliente</option>
+                      <option value="2">Diseñador</option>
+                      <option value="3">Administrador</option>
+                    </select>
+                  </form>
+                </div>
+              </div>             
+            </div>
+          </div>
+        </div> 
+      </div>
+      <div class="container">
+        <div class="modal fade" id="myModaledit4">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>      
+              <div class="modal-body">
+                <div class="formulario">
+                  <form>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" value="Ofelia"><br>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" value="Taborda"><br>
+                    <label for="cedula">Cédula</label>
+                    <input type="text" name="cedula" id="cedula" value="21443073" readonly><br>
+                    <label for="correo">Email</label>
+                    <input type="email" name="correo" id="correo" value="ofelia4435@hotmail.com"><br>
+                    <label for="celular">Celular</label>
+                    <input type="text" name="celular" id="celular" value="3004558780"><br>
+                    <select class="custom-select rol">
+                      <option selected>Rol</option>
+                      <option value="1">Cliente</option>
+                      <option value="2">Diseñador</option>
+                      <option value="3">Administrador</option>
+                    </select>
+                  </form>
+                </div>
+              </div>             
+            </div>
+          </div>
+        </div> 
+      </div>
+      <div class="container">
+        <div class="modal fade" id="myModaledit5">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>      
+              <div class="modal-body">
+                <div class="formulario">
+                  <form>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" value="Jesús"><br>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" value="Cardona"><br>
+                    <label for="cedula">Cédula</label>
+                    <input type="text" name="cedula" id="cedula" value="12345678" readonly><br>
+                    <label for="correo">Email</label>
+                    <input type="email" name="correo" id="correo" value="cardona123@hotmail.com"><br>
+                    <label for="celular">Celular</label>
+                    <input type="text" name="celular" id="celular" value="3112566852"><br>
+                    <select class="custom-select rol">
+                      <option selected>Rol</option>
+                      <option value="1">Cliente</option>
+                      <option value="2">Diseñador</option>
+                      <option value="3">Administrador</option>
+                    </select>
+                  </form>
+                </div>
+              </div>             
+            </div>
+          </div>
+        </div> 
+      </div>
+      <div class="container">
+        <div class="modal fade" id="myModaledit6">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>      
+              <div class="modal-body">
+                <div class="formulario">
+                  <form>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" value="Maria"><br>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" value="Ruiz"><br>
+                    <label for="cedula">Cédula</label>
+                    <input type="text" name="cedula" id="cedula" value="98745632" readonly><br>
+                    <label for="correo">Email</label>
+                    <input type="email" name="correo" id="correo" value="marir45@hotmail.com"><br>
+                    <label for="celular">Celular</label>
+                    <input type="text" name="celular" id="celular" value="3102232025"><br>
+                    <select class="custom-select rol">
+                      <option selected>Rol</option>
+                      <option value="1">Cliente</option>
+                      <option value="2">Diseñador</option>
+                      <option value="3">Administrador</option>
+                    </select>
+                  </form>
+                </div>
+              </div>             
+            </div>
+          </div>
+        </div> 
+      </div>
+      <div class="container">
+        <div class="modal fade" id="myModaledit7">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>      
+              <div class="modal-body">
+                <div class="formulario">
+                  <form>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" value="Juliana"><br>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" value="Madrigal"><br>
+                    <label for="cedula">Cédula</label>
+                    <input type="text" name="cedula" id="cedula" value="2468101214" readonly><br>
+                    <label for="correo">Email</label>
+                    <input type="email" name="correo" id="correo" value="julima2810@gmail.com"><br>
+                    <label for="celular">Celular</label>
+                    <input type="text" name="celular" id="celular" value="3154456985"><br>
+                    <select class="custom-select rol">
+                      <option selected>Rol</option>
+                      <option value="1">Cliente</option>
+                      <option value="2">Diseñador</option>
+                      <option value="3">Administrador</option>
+                    </select>
+                  </form>
+                </div>
+              </div>             
+            </div>
+          </div>
+        </div> 
+      </div>
+      <div class="container">
+        <div class="modal fade" id="myModaledit8">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>      
+              <div class="modal-body">
+                <div class="formulario">
+                  <form>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" value="Jorge"><br>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" value="Taborda"><br>
+                    <label for="cedula">Cédula</label>
+                    <input type="text" name="cedula" id="cedula" value="0315791113" readonly><br>
+                    <label for="correo">Email</label>
+                    <input type="email" name="correo" id="correo" value="jortaborda@gmail.com"><br>
+                    <label for="celular">Celular</label>
+                    <input type="text" name="celular" id="celular" value="3126985478"><br>
+                    <select class="custom-select rol">
+                      <option selected>Rol</option>
+                      <option value="1">Cliente</option>
+                      <option value="2">Diseñador</option>
+                      <option value="3">Administrador</option>
+                    </select>
+                  </form>
+                </div>
+              </div>             
+            </div>
+          </div>
+        </div> 
+      </div>
+      <div class="container">
+        <div class="modal fade" id="myModaledit9">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>      
+              <div class="modal-body">
+                <div class="formulario">
+                  <form>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" value="Salomé"><br>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" value="Córdoba"><br>
+                    <label for="cedula">Cédula</label>
+                    <input type="text" name="cedula" id="cedula" value="2589631478" readonly><br>
+                    <label for="correo">Email</label>
+                    <input type="email" name="correo" id="correo" value="salitocor@hotmail.com"><br>
+                    <label for="celular">Celular</label>
+                    <input type="text" name="celular" id="celular" value="3203365632"><br>
+                    <select class="custom-select rol">
+                      <option selected>Rol</option>
+                      <option value="1">Cliente</option>
+                      <option value="2">Diseñador</option>
+                      <option value="3">Administrador</option>
+                    </select>
+                  </form>
+                </div>
+              </div>             
+            </div>
+          </div>
+        </div> 
+      </div>
+      <div class="container">
+        <div class="modal fade" id="myModaledit10">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>      
+              <div class="modal-body">
+                <div class="formulario">
+                  <form>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" value="Emiliano"><br>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" value="Bustamante"><br>
+                    <label for="cedula">Cédula</label>
+                    <input type="text" name="cedula" id="cedula" value="7458963521" readonly><br>
+                    <label for="correo">Email</label>
+                    <input type="email" name="correo" id="correo" value="emibustamante@hotmail.com"><br>
+                    <label for="celular">Celular</label>
+                    <input type="text" name="celular" id="celular" value="3004568520"><br>
+                    <select class="custom-select rol">
+                      <option selected>Rol</option>
+                      <option value="1">Cliente</option>
+                      <option value="2">Diseñador</option>
+                      <option value="3">Administrador</option>
+                    </select>
+                  </form>
+                </div>
+              </div>             
+            </div>
+          </div>
+        </div> 
+      </div>
+      <div class="container">
+        <div class="modal fade" id="myModaledit11">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>      
+              <div class="modal-body">
+                <div class="formulario">
+                  <form>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" value="Martín"><br>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" value="Muñoz"><br>
+                    <label for="cedula">Cédula</label>
+                    <input type="text" name="cedula" id="cedula" value="1456297452" readonly><br>
+                    <label for="correo">Email</label>
+                    <input type="email" name="correo" id="correo" value="tintin2019@hotmail.com"><br>
+                    <label for="celular">Celular</label>
+                    <input type="text" name="celular" id="celular" value="3114566258"><br>
+                    <select class="custom-select rol">
+                      <option selected>Rol</option>
+                      <option value="1">Cliente</option>
+                      <option value="2">Diseñador</option>
+                      <option value="3">Administrador</option>
+                    </select>
+                  </form>
+                </div>
+              </div>             
+            </div>
+          </div>
+        </div> 
+      </div>
+      <div class="container">
+        <div class="modal fade" id="myModaledit12">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>      
+              <div class="modal-body">
+                <div class="formulario">
+                  <form>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" value="Adrian"><br>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" value="Ruiz"><br>
+                    <label for="cedula">Cédula</label>
+                    <input type="text" name="cedula" id="cedula" value="7898854122" readonly><br>
+                    <label for="correo">Email</label>
+                    <input type="email" name="correo" id="correo" value="adriancito@hotmail.com"><br>
+                    <label for="celular">Celular</label>
+                    <input type="text" name="celular" id="celular" value="3014247110"><br>
+                    <select class="custom-select rol">
+                      <option selected>Rol</option>
+                      <option value="1">Cliente</option>
+                      <option value="2">Diseñador</option>
+                      <option value="3">Administrador</option>
+                    </select>
+                  </form>
+                </div>
+              </div>             
+            </div>
+          </div>
+        </div> 
+      </div>
+  <div class="final">
+    <div class="contacto">
+      <p id="contactanos">Contáctanos</p>
+      <p>vbustamante8@misena.edu.co</p>
+      <p>WhatsApp: +573014247110</p>
+    </div>
+    <div class="redes">
+      <p>Nuestras Redes Sociales</p>
+      <a href="https://www.instagram.com/designcal7/" target="_blank"><i class="bi bi-instagram"></i></a>
+      <a href="https://www.facebook.com/Design-Cal-111539384823431/?ref=page_internal&_rdc=1&_rdr" target="_blank"><i class="bi bi-facebook"></i></a>
+      <a href="https://co.pinterest.com/designcal3/_saved/" target="_blank"><i class="bi bi-pinterest"></i></a>
+    </div>
+  </div>
+
+<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+<script>
+  $(document).ready(function() {
+  $('#tablaUsuarios').DataTable();
+} );
+</script>
+<script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+</body>
+</html>

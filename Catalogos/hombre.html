@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/index.css">
+  <title>index</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+
+
+<body>
+  <div id="banner">
+    <div id="espacio"></div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand">
+        <img class="logo" src="../access/image/logo.png" alt="logo">
+      </a>
+      <button class="navbar-toggler" data-target="menu" data-toggle="collapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="../index.html">Inicio <span class="sr-only"></span></a>
+          </li>
+          <li>
+            <div class="dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="desplegable" href="#">
+                Patrones
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="../Patrones/cargarPatrones.html">Cargar</a>
+                <a class="dropdown-item" href="../Patrones/listarPatrones.html">Listar</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="desplegable" href="#">
+                Catálogos
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="listar.html">Listar Catálogo</a>
+                <a class="dropdown-item" href="mujer.html">Mujer</a>
+                <a class="dropdown-item" href="hombre.html">Hombre</a>
+                <a class="dropdown-item" href="ninos.html">Niños</a>
+                <a class="dropdown-item" href="bebes.html">Bebés</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="desplegable" href="#">
+                Usuarios
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="../Usuarios/registroUsuarios.html">Ingresar</a>
+                <a class="dropdown-item" href="../Usuarios/listarUsuarios.html">Listar</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="desplegable" href="#">
+                Correos
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="../Correos/crearCorreos.html">Crear</a>
+                <a class="dropdown-item" href="../Correos/listarCorreos.html">Listar</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="desplegable" href="#">
+                Ventas
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="../Ventas/reporteVentas.html">Generar Reporte</a>
+                <a class="dropdown-item" href="../Ventas/listarventas.html">Listar Ventas</a>
+                <a class="dropdown-item" href="../Ventas/listarReportes.html">Listar Reportes</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="desplegable" href="#">
+                Encargos
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="../Encargos/ingresarEncargo.html">Ingresar</a>
+                <a class="dropdown-item" href="../Encargos/listarEncargos.html">Listar</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div id="inicio">
+          <div class="dropdown">
+            <a class="nav-link dropdown-toggle sesion" data-toggle="dropdown" data-target="desplegable" href="#">
+              Iniciar Sesión
+            </a>
+            <div id="sesion">
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <form>
+                  <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Correo</label>
+                    <div class="col-sm-10">
+                      <input type="email" class="form-control" id="inputEmail3" placeholder="Correo Electrónico" required>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Contraseña</label>
+                    <div class="col-sm-10">
+                      <input type="password" class="form-control" id="inputPassword3" placeholder="Contraseña" required>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-sm-10">
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="checkbox"> Recuérdame
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-sm-10">
+                      <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <a id="registro" href="#" data-toggle="modal" data-target="#myModalRegistro">Registrarse</a>
+          <a href="../Compras/CarritoCompras.html">
+            <ion-icon name="cart" id="carrito"></ion-icon>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div class="imagencatalogo">
+    <div class="imgcat">
+      <a href="#"><img src="../access/image/hombre/camisahombre(1).png" width="100%" height="100%" alt="Camisa"></a>
+      <p>Camisa</p>
+      <p>10.000</p>
+      <div class="addcar">
+        <input type="submit" id="add" value="Añadir al carrito">
+      </div>
+    </div>
+    <div class="imgcat">
+      <a href="#"><img src="../access/image/hombre/camisetahombre(1).png" width="100%" height="100%" alt="Camiseta"></a>
+      <p>Camiseta</p>
+      <p>10.000</p>
+      <div class="addcar">
+        <input type="submit" id="add" value="Añadir al carrito">
+      </div>
+    </div>
+    <div class="imgcat">
+      <a href="#"><img src="../access/image/hombre/chompahombre(1).png" width="100%" height="100%" alt="Chompa"></a>
+      <p>Chompa</p>
+      <p>10.000</p>
+      <div class="addcar">
+        <input type="submit" id="add" value="Añadir al carrito">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="modal fade" id="myModalRegistro">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>      
+          <div class="modal-body">
+            <div class="formulario">
+              <form>
+                <h3>Registro</h3>
+                <div class="reg">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" id="apellido" placeholder="Apellido">
+                <label for="cedula">Cédula</label>
+                <input type="text" name="cedula" id="cedula" placeholder="Número de cédula" required>
+                <label for="correo">Email</label>
+                <input type="email" name="correo" id="correo" placeholder="Correo Electrónico" required>
+                <label for="celular">Celular</label>
+                <input type="text" name="celular" id="celular" placeholder="Número de celular">
+            </div>
+            <div class="bot">
+            <input type="submit" name="boton" id="boton" value="Registrarse">
+            </div>
+              </form>
+            </div>
+          </div>             
+        </div>
+      </div>
+    </div> 
+  </div>
+  <div class="final">
+    <div class="contacto">
+      <p id="contactanos">Contáctanos</p>
+      <p>vbustamante8@misena.edu.co</p>
+      <p>WhatsApp: +573014247110</p>
+    </div>
+    <div class="redes">
+      <p>Nuestras Redes Sociales</p>
+      <a href="https://www.instagram.com/designcal7/" target="_blank"><i class="bi bi-instagram"></i></a>
+      <a href="https://www.facebook.com/Design-Cal-111539384823431/?ref=page_internal&_rdc=1&_rdr" target="_blank"><i
+          class="bi bi-facebook"></i></a>
+      <a href="https://co.pinterest.com/designcal3/_saved/" target="_blank"><i class="bi bi-pinterest"></i></a>
+    </div>
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"></script>
+
+</body>
+
+</html>

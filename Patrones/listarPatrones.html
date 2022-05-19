@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/index.css">
+  <title>index</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+</head>
+
+
+<body>
+  <div id="banner">
+    <div id="espacio"></div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand">
+        <img class="logo" src="../access/image/logo.png" alt="logo" >
+      </a>
+    <!--  <button class="navbar-toggler" data-target="menu" data-toggle="collapse">-->
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="../index.html">Inicio <span class="sr-only"></span></a>
+          </li>
+          <li>
+            <div class="dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="desplegable" href="#">
+                Patrones
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="cargarPatrones.html">Cargar</a>
+                <a class="dropdown-item" href="listarPatrones.html">Listar</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="desplegable" href="#">
+                Catálogos
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="../Catalogos/listar.html">Listar Catálogo</a>
+                <a class="dropdown-item" href="../Catalogos/mujer.html">Mujer</a>
+                <a class="dropdown-item" href="../Catalogos/hombre.html">Hombre</a>
+                <a class="dropdown-item" href="../Catalogos/ninos.html">Niños</a>
+                <a class="dropdown-item" href="../Catalogos/bebes.html">Bebés</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="desplegable" href="#">
+                Usuarios
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="../Usuarios/registroUsuarios.html">Ingresar</a>
+                <a class="dropdown-item" href="../Usuarios/listarUsuarios.html">Listar</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="desplegable" href="#">
+                Correos
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="../Correos/crearCorreos.html">Crear</a>
+                <a class="dropdown-item" href="../Correos/listarCorreos.html">Listar</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="desplegable" href="#">
+                Ventas
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="../Ventas/reporteVentas.html">Generar Reporte</a>
+                <a class="dropdown-item" href="../Ventas/listarventas.html">Listar Ventas</a>
+                <a class="dropdown-item" href="../Ventas/listarReportes.html">Listar Reportes</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="desplegable" href="#">
+                Encargos
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="../Encargos/ingresarEncargo.html">Ingresar</a>
+                <a class="dropdown-item" href="../Encargos/listarEncargos.html">Listar</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div id="inicio">
+          <div class="dropdown">
+            <a class="nav-link dropdown-toggle sesion" data-toggle="dropdown" data-target="desplegable" href="#">
+              Iniciar Sesión
+            </a>
+            <div id="sesion">
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <form>
+                  <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Correo</label>
+                    <div class="col-sm-10">
+                      <input type="email" class="form-control" id="inputEmail3" placeholder="Correo Electrónico" required>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Contraseña</label>
+                    <div class="col-sm-10">
+                      <input type="password" class="form-control" id="inputPassword3" placeholder="Contraseña" required>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-sm-10">
+                      <div class="form-check">
+                        <label class="form-check-label">
+                          <input class="form-check-input" type="checkbox"> Recuérdame
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-sm-10">
+                      <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <a id="registro" href="#">Registrarse</a>
+          <a href="../Compras/CarritoCompras.html"><ion-icon name="cart" id="carrito"></ion-icon></a>
+
+        </div>
+      </div>
+    </nav>
+  </div>
+  <div  class="container">
+    <h2>Lista de patrones</h2>
+    <table id="tablaPatron" class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th>Nombre del archivo</th>
+            <th>Precio</th>
+            <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Vestido tejido</td>
+            <td>10.000</td>
+            <td><button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModalpatrones1"><img class="eye" src="../access/image/eye.svg" alt=""></button>
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModalpatronesedit1"><img class="edit" src="../access/image/edit.svg" alt=""></button>
+            <button type="button" class="btn btn-danger"><img class="trash" src="../access/image/trash-2.png" alt=""></button></td>
+          </tr>
+          <tr>
+            <td> Bermuda </td>
+            <td>10.000</td>
+            <td><button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModalpatrones2"><img class="eye" src="../access/image/eye.svg" alt=""></button>
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModalpatronesedit2"><img class="edit" src="../access/image/edit.svg" alt=""></button>
+            <button type="button" class="btn btn-danger"><img class="trash" src="../access/image/trash-2.png" alt=""></button></td>
+          </tr>
+          <tr>
+            <td> Camiseta </td>
+            <td>15.000</td>
+            <td><button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModalpatrones3"><img class="eye" src="../access/image/eye.svg" alt=""></button>
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModalpatronesedit3"><img class="edit" src="../access/image/edit.svg" alt=""></button>
+            <button type="button" class="btn btn-danger"><img class="trash" src="../access/image/trash-2.png" alt=""></button></td>
+          </tr>
+          <tr>
+            <td> Chompa </td>
+            <td>10.000</td>
+            <td><button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModalpatrones4"><img class="eye" src="../access/image/eye.svg" alt=""></button>
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModalpatronesedit4"><img class="edit" src="../access/image/edit.svg" alt=""></button>
+            <button type="button" class="btn btn-danger"><img class="trash" src="../access/image/trash-2.png" alt=""></button></td>
+          </tr>
+          <tr>
+            <td> Falda </td>
+            <td>10.000</td>
+            <td><button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModalpatrones5"><img class="eye" src="../access/image/eye.svg" alt=""></button>
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModalpatronesedit5"><img class="edit" src="../access/image/edit.svg" alt=""></button>
+            <button type="button" class="btn btn-danger"><img class="trash" src="../access/image/trash-2.png" alt=""></button></td>
+          </tr>
+          <tr>
+            <td> Enterizo </td>
+            <td>15.000</td>
+            <td><button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModalpatrones6"><img class="eye" src="../access/image/eye.svg" alt=""></button>
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModalpatronesedit6"><img class="edit" src="../access/image/edit.svg" alt=""></button>
+            <button type="button" class="btn btn-danger"><img class="trash" src="../access/image/trash-2.png" alt=""></button></td>
+          </tr>
+          <tr>
+            <td> Camibuso </td>
+            <td>10.000</td>
+            <td><button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModalpatrones7"><img class="eye" src="../access/image/eye.svg" alt=""></button>
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModalpatronesedit7"><img class="edit" src="../access/image/edit.svg" alt=""></button>
+            <button type="button" class="btn btn-danger"><img class="trash" src="../access/image/trash-2.png" alt=""></button></td>
+          </tr>
+          <tr>
+            <td> Jogger </td>
+            <td>15.000</td>
+            <td><button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModalpatrones8"><img class="eye" src="../access/image/eye.svg" alt=""></button>
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModalpatronesedit8"><img class="edit" src="../access/image/edit.svg" alt=""></button>
+            <button type="button" class="btn btn-danger"><img class="trash" src="../access/image/trash-2.png" alt=""></button></td>
+          </tr>
+          <tr>
+            <td> Camisa </td>
+            <td>10.000</td>
+            <td><button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModalpatrones9"><img class="eye" src="../access/image/eye.svg" alt=""></button>
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModalpatronesedit9"><img class="edit" src="../access/image/edit.svg" alt=""></button>
+            <button type="button" class="btn btn-danger"><img class="trash" src="../access/image/trash-2.png" alt=""></button></td>
+          </tr>
+          <tr>
+            <td> Camisa </td>
+            <td>10.000</td>
+            <td><button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModalpatrones10"><img class="eye" src="../access/image/eye.svg" alt=""></button>
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModalpatronesedit10"><img class="edit" src="../access/image/edit.svg" alt=""></button>
+            <button type="button" class="btn btn-danger"><img class="trash" src="../access/image/trash-2.png" alt=""></button></td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+  <div class="container">
+    <div class="modal fade" id="myModalpatrones1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>      
+          <div class="modal-body">
+            <div class="formulario">
+              <form>
+                <label for="nombre">Nombre del archivo</label>
+                <input type="text" name="nombre" id="nombre" value="Vestido Tejido" readonly><br><br>
+                <label for="descripcion">Descripción</label>
+                <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Vestido tejido de bebé línea A, manga larga " readonly></textarea><br>
+                <label for="precio">Precio</label><br>
+                <input type="text" name="precio" id="precio" value="10.000" readonly><br>
+              </form>
+            </div>
+          </div>             
+        </div>
+      </div>
+    </div> 
+  </div>
+  <div class="container">
+    <div class="modal fade" id="myModalpatrones2">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>      
+          <div class="modal-body">
+            <div class="formulario">
+              <form>
+                <label for="nombre">Nombre del archivo</label>
+                <input type="text" name="nombre" id="nombre" value="Bermuda" readonly><br><br>
+                <label for="descripcion">Descripción</label>
+                <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Bermuda de bebé con elástico en cintura" readonly></textarea><br>
+                <label for="precio">Precio</label><br>
+                <input type="text" name="precio" id="precio" value="10.000" readonly><br>
+              </form>
+            </div>
+          </div>             
+        </div>
+      </div>
+    </div> 
+  </div>
+  <div class="container">
+    <div class="modal fade" id="myModalpatrones3">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>      
+          <div class="modal-body">
+            <div class="formulario">
+              <form>
+                <label for="nombre">Nombre del archivo</label>
+                <input type="text" name="nombre" id="nombre" value="Camiseta" readonly><br><br>
+                <label for="descripcion">Descripción</label>
+                <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Camiseta masculina básica" readonly></textarea><br>
+                <label for="precio">Precio</label><br>
+                <input type="text" name="precio" id="precio" value="10.000" readonly><br>
+              </form>
+            </div>
+          </div>             
+        </div>
+      </div>
+    </div> 
+  </div>
+  <div class="container">
+    <div class="modal fade" id="myModalpatrones4">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>      
+          <div class="modal-body">
+            <div class="formulario">
+              <form>
+                <label for="nombre">Nombre del archivo</label>
+                <input type="text" name="nombre" id="nombre" value="Chompa" readonly><br><br>
+                <label for="descripcion">Descripción</label>
+                <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Chompa masculina manga ranglan bolsillo canguro" readonly></textarea><br>
+                <label for="precio">Precio</label><br>
+                <input type="text" name="precio" id="precio" value="10.000" readonly><br>
+              </form>
+            </div>
+          </div>             
+        </div>
+      </div>
+    </div> 
+  </div>
+  <div class="container">
+    <div class="modal fade" id="myModalpatrones5">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>      
+          <div class="modal-body">
+            <div class="formulario">
+              <form>
+                <label for="nombre">Nombre del archivo</label>
+                <input type="text" name="nombre" id="nombre" value="Falda" readonly><br><br>
+                <label for="descripcion">Descripción</label>
+                <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Falda corta línea A, talle alto" readonly></textarea><br>
+                <label for="precio">Precio</label><br>
+                <input type="text" name="precio" id="precio" value="10.000" readonly><br>
+              </form>
+            </div>
+          </div>             
+        </div>
+      </div>
+    </div> 
+  </div>
+  <div class="container">
+    <div class="modal fade" id="myModalpatrones6">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>      
+          <div class="modal-body">
+            <div class="formulario">
+              <form>
+                <label for="nombre">Nombre del archivo</label>
+                <input type="text" name="nombre" id="nombre" value="Enterizo" readonly><br><br>
+                <label for="descripcion">Descripción</label>
+                <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Enterizo para mujer con escote bandeja y espalda con nudo " readonly></textarea><br>
+                <label for="precio">Precio</label><br>
+                <input type="text" name="precio" id="precio" value="10.000" readonly><br>
+              </form>
+            </div>
+          </div>             
+        </div>
+      </div>
+    </div> 
+  </div>
+  <div class="container">
+    <div class="modal fade" id="myModalpatrones7">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>      
+          <div class="modal-body">
+            <div class="formulario">
+              <form>
+                <label for="nombre">Nombre del archivo</label>
+                <input type="text" name="nombre" id="nombre" value="Camibuso" readonly><br><br>
+                <label for="descripcion">Descripción</label>
+                <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Buzo cuello tortuga manga larga, slim fit. " readonly></textarea><br>
+                <label for="precio">Precio</label><br>
+                <input type="text" name="precio" id="precio" value="10.000" readonly><br>
+              </form>
+            </div>
+          </div>             
+        </div>
+      </div>
+    </div> 
+  </div>
+  <div class="container">
+    <div class="modal fade" id="myModalpatrones8">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>      
+          <div class="modal-body">
+            <div class="formulario">
+              <form>
+                <label for="nombre">Nombre del archivo</label>
+                <input type="text" name="nombre" id="nombre" value="Jogger" readonly><br><br>
+                <label for="descripcion">Descripción</label>
+                <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Jogger de niño tipo capri" readonly></textarea><br>
+                <label for="precio">Precio</label><br>
+                <input type="text" name="precio" id="precio" value="10.000" readonly><br>
+              </form>
+            </div>
+          </div>             
+        </div>
+      </div>
+    </div> 
+  </div>
+  <div class="container">
+    <div class="modal fade" id="myModalpatrones9">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>      
+          <div class="modal-body">
+            <div class="formulario">
+              <form>
+                <label for="nombre">Nombre del archivo</label>
+                <input type="text" name="nombre" id="nombre" value="Camisa" readonly><br><br>
+                <label for="descripcion">Descripción</label>
+                <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Camisa básica de niño manga corta" readonly></textarea><br>
+                <label for="precio">Precio</label><br>
+                <input type="text" name="precio" id="precio" value="10.000" readonly><br>
+              </form>
+            </div>
+          </div>             
+        </div>
+      </div>
+    </div> 
+  </div>
+  <div class="container">
+    <div class="modal fade" id="myModalpatrones10">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>      
+          <div class="modal-body">
+            <div class="formulario">
+              <form>
+                <label for="nombre">Nombre del archivo</label>
+                <input type="text" name="nombre" id="nombre" value="Camisa" readonly><br><br>
+                <label for="descripcion">Descripción</label>
+                <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Camisa masculina slim fit" readonly></textarea><br>
+                <label for="precio">Precio</label><br>
+                <input type="text" name="precio" id="precio" value="10.000" readonly><br>
+              </form>
+            </div>
+          </div>             
+        </div>
+      </div>
+    </div> 
+  </div>
+  <div class="container">
+    <div class="modal fade" id="myModalpatronesedit1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>      
+          <div class="modal-body">
+            <div class="formulario">
+              <form>
+                <label for="nombre">Nombre del archivo</label>
+                <input type="text" name="nombre" id="nombre" value="Vestido Tejido" ><br><br>
+                <label for="descripcion">Descripción</label>
+                <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Vestido tejido de bebé línea A, manga larga " ></textarea><br>
+                <label for="precio">Precio</label><br>
+                <input type="text" name="precio" id="precio" value="10.000" ><br>
+              </form>
+            </div>
+          </div>             
+        </div>
+      </div>
+    </div> 
+  </div>
+  <div class="container">
+    <div class="modal fade" id="myModalpatronesedit2">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>      
+          <div class="modal-body">
+            <div class="formulario">
+              <form>
+                <label for="nombre">Nombre del archivo</label>
+                <input type="text" name="nombre" id="nombre" value="Bermuda" ><br><br>
+                <label for="descripcion">Descripción</label>
+                <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Bermuda de bebé con elástico en cintura" ></textarea><br>
+                <label for="precio">Precio</label><br>
+                <input type="text" name="precio" id="precio" value="10.000" ><br>
+              </form>
+            </div>
+          </div>             
+        </div>
+      </div>
+    </div> 
+  </div>
+  <div class="container">
+    <div class="modal fade" id="myModalpatronesedit3">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>      
+          <div class="modal-body">
+            <div class="formulario">
+              <form>
+                <label for="nombre">Nombre del archivo</label>
+                <input type="text" name="nombre" id="nombre" value="Camiseta" ><br><br>
+                <label for="descripcion">Descripción</label>
+                <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Camiseta masculina básica" ></textarea><br>
+                <label for="precio">Precio</label><br>
+                <input type="text" name="precio" id="precio" value="10.000" ><br>
+              </form>
+            </div>
+          </div>             
+        </div>
+      </div>
+    </div> 
+  </div>
+  <div class="container">
+    <div class="modal fade" id="myModalpatronesedit4">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>      
+          <div class="modal-body">
+            <div class="formulario">
+              <form>
+                <label for="nombre">Nombre del archivo</label>
+                <input type="text" name="nombre" id="nombre" value="Chompa" ><br><br>
+                <label for="descripcion">Descripción</label>
+                <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Chompa masculina manga ranglan bolsillo canguro" ></textarea><br>
+                <label for="precio">Precio</label><br>
+                <input type="text" name="precio" id="precio" value="10.000" ><br>
+              </form>
+            </div>
+          </div>             
+        </div>
+      </div>
+    </div> 
+  </div>
+  <div class="container">
+    <div class="modal fade" id="myModalpatronesedit5">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>      
+          <div class="modal-body">
+            <div class="formulario">
+              <form>
+                <label for="nombre">Nombre del archivo</label>
+                <input type="text" name="nombre" id="nombre" value="Falda" ><br><br>
+                <label for="descripcion">Descripción</label>
+                <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Falda corta línea A, talle alto" ></textarea><br>
+                <label for="precio">Precio</label><br>
+                <input type="text" name="precio" id="precio" value="10.000" ><br>
+              </form>
+            </div>
+          </div>             
+        </div>
+      </div>
+    </div> 
+  </div>
+  <div class="container">
+    <div class="modal fade" id="myModalpatronesedit6">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>      
+          <div class="modal-body">
+            <div class="formulario">
+              <form>
+                <label for="nombre">Nombre del archivo</label>
+                <input type="text" name="nombre" id="nombre" value="Enterizo" ><br><br>
+                <label for="descripcion">Descripción</label>
+                <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Enterizo para mujer con escote bandeja y espalda con nudo " ></textarea><br>
+                <label for="precio">Precio</label><br>
+                <input type="text" name="precio" id="precio" value="10.000" ><br>
+              </form>
+            </div>
+          </div>             
+        </div>
+      </div>
+    </div> 
+  </div>
+  <div class="container">
+    <div class="modal fade" id="myModalpatronesedit7">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>      
+          <div class="modal-body">
+            <div class="formulario">
+              <form>
+                <label for="nombre">Nombre del archivo</label>
+                <input type="text" name="nombre" id="nombre" value="Camibuso" ><br><br>
+                <label for="descripcion">Descripción</label>
+                <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Buzo cuello tortuga manga larga, slim fit. " ></textarea><br>
+                <label for="precio">Precio</label><br>
+                <input type="text" name="precio" id="precio" value="10.000" ><br>
+              </form>
+            </div>
+          </div>             
+        </div>
+      </div>
+    </div> 
+  </div>
+  <div class="container">
+    <div class="modal fade" id="myModalpatronesedit8">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>      
+          <div class="modal-body">
+            <div class="formulario">
+              <form>
+                <label for="nombre">Nombre del archivo</label>
+                <input type="text" name="nombre" id="nombre" value="Jogger" ><br><br>
+                <label for="descripcion">Descripción</label>
+                <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Jogger de niño tipo capri" ></textarea><br>
+                <label for="precio">Precio</label><br>
+                <input type="text" name="precio" id="precio" value="10.000" ><br>
+              </form>
+            </div>
+          </div>             
+        </div>
+      </div>
+    </div> 
+  </div>
+  <div class="container">
+    <div class="modal fade" id="myModalpatronesedit9">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>      
+          <div class="modal-body">
+            <div class="formulario">
+              <form>
+                <label for="nombre">Nombre del archivo</label>
+                <input type="text" name="nombre" id="nombre" value="Camisa" ><br><br>
+                <label for="descripcion">Descripción</label>
+                <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Camisa básica de niño manga corta" ></textarea><br>
+                <label for="precio">Precio</label><br>
+                <input type="text" name="precio" id="precio" value="10.000" ><br>
+              </form>
+            </div>
+          </div>             
+        </div>
+      </div>
+    </div> 
+  </div>
+  <div class="container">
+    <div class="modal fade" id="myModalpatronesedit10">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>      
+          <div class="modal-body">
+            <div class="formulario">
+              <form>
+                <label for="nombre">Nombre del archivo</label>
+                <input type="text" name="nombre" id="nombre" value="Camisa" ><br><br>
+                <label for="descripcion">Descripción</label>
+                <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Camisa masculina slim fit" ></textarea><br>
+                <label for="precio">Precio</label><br>
+                <input type="text" name="precio" id="precio" value="10.000" ><br>
+              </form>
+            </div>
+          </div>             
+        </div>
+      </div>
+    </div> 
+  </div>
+  <div class="final">
+    <div class="contacto">
+      <p id="contactanos">Contáctanos</p>
+      <p>vbustamante8@misena.edu.co</p>
+      <p>WhatsApp: +573014247110</p>
+    </div>
+    <div class="redes">
+      <p>Nuestras Redes Sociales</p>
+      <a href="https://www.instagram.com/designcal7/" target="_blank"><i class="bi bi-instagram"></i></a>
+      <a href="https://www.facebook.com/Design-Cal-111539384823431/?ref=page_internal&_rdc=1&_rdr" target="_blank"><i class="bi bi-facebook"></i></a>
+      <a href="https://co.pinterest.com/designcal3/_saved/" target="_blank"><i class="bi bi-pinterest"></i></a>
+    </div>
+  </div>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"></script>
+    <script>$(document).ready(function() {
+      $('#tablaPatron').DataTable();
+  } );</script>
+  
+  <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+
+</body>
+
+</html>

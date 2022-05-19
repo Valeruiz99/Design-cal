@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Vesper+Libre&display=swap');
+*{
+    font-family: 'Vesper Libre', serif;
+    color: black;
+}
+.form-control{
+    border: black solid 1px;
+}
+.contenido{
+    background-image: url("../access/image/relleno.jpg");
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 1%;
+    border-radius: 160px;
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+.nosotros p{
+    margin-top: 28px;
+    margin-bottom: 1rem;
+}
+.nosotros img{
+    
+    padding-top: 20%;
+    margin-left: 28%;
+    border-radius:131px;
+}
+.texto{
+    font-size: 150%;
+    padding: 10%;
+}
+.nosotros{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+button{
+    border: 2px solid black;
+    border-radius: 25px;
+}
+.dropdown-menu.show{
+    width: 192%;
+    border: black solid 2px;
+}
+#banner{
+    background-image: url("../access/image/banner2.png");
+    height: 251px;
+}
+ion-icon {
+    font-size: 40px;
+  }
+.col-sm-10 {
+    display: block;
+    padding-left: 40px;
+}
+label.col-sm-2.col-form-label {
+    display: block;
+    width: 100px;
+    padding-right: 400px;
+    margin: 10px;
+}
+#espacio{
+    display: block;
+    padding: 68px;
+}
+a.nav-link.dropdown-toggle, 
+#registro, 
+ul.navbar-nav.mr-auto{
+    color: black;
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 12px;
+}
+img{
+    margin: -30px;
+}
+.imagenes img{
+    width: 100%;
+    height: 100%;
+}
+ul {
+    margin-top: 29px;
+    color: black;
+    border: black solid 2px;
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 12px;
+}
+#inicio {
+    display: inline-flex;
+    margin-top: 36px;}
+#registro{
+    border: black solid 2px;
+    border-radius: 12px;
+    color: black;
+    padding: 0.5em;
+}
+.sesion{
+    border: black solid 2px;
+    border-radius: 12px;
+    color: black;
+}
+#formulario{
+    width: 40%;
+}
+#botoninicio{
+    display: block;
+    width: 59%;
+}
+.btn.btn-warning,
+.btn.btn-danger{
+    width: 40px;
+}
+.eye{
+    width: 20px;
+}
+.edit{
+    width: 20px;
+}
+
+.logo{
+    height:150px;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: black;
+}
+#p1{
+    padding: 100px;
+}
+img#producto1{
+    height: 320px;
+    border: black solid 2px;
+    border-radius: 25px;
+    padding: 4px;
+}
+#texto{
+    text-align: center;
+    width: 400px;
+    padding: 50px;
+    margin: 0px;
+}
+#p2{
+    padding: 100px;
+}
+img#producto2{
+    height: 440px;
+    border: black solid 2px;
+    border-radius: 25px;
+    padding: 4px;
+    margin-top: -236;
+}
+#datos, #guardar{
+    margin:30px;
+}
+#crear{
+    height: 70%;
+    width: 96%;
+}
+.formularioCorreos,
+.formularioPatrones,
+.formularioVentas{
+    min-height: 100%;
+    min-width: 40%;  
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.formularioCorreos input{
+    width: 72%;
+}
+#carrito{
+    color: black;
+}
+select.custom-select{
+    width: 200px;
+}
+.main,
+.main.registro{
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+}
+.formulario{
+    min-height: 100%;
+    min-width: 70%;  
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.final{
+    background-color: black;
+    min-height: 22vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.formulario label, 
+.formulario input,
+.formularioVentas label,
+.formularioVentas input{
+    display: inline-block;
+}
+.formularioPatrones label,
+.formularioPatrones input,
+.formularioCorreos label,
+.formularioCorreos input{
+    display: block;
+}
+.formulario input{
+    
+    width: 100%;
+}
+.formulario h3,
+.formularioCorreos h3,
+.formularioEncargos h3,
+.formularioPatrones h3,
+.formularioVentas h3{
+    text-align: center;
+    padding-bottom: 1%;
+    border-bottom: 2px solid black;
+}
+.formularioCorreos form{
+    border: 3px solid black;
+    padding: 6%;    
+}
+.division{
+    display: grid;
+    grid-template-columns: 25% 65%;
+    column-gap: 10%;
+    grid-template-rows: repeat(5, 15%);
+    row-gap: 4%;
+    padding-top: 1%;
+}
+.formularioEncargos{
+    border: 3px solid black;
+    padding: 2%;
+    background-image: url("../access/image/fondo.jpg");
+    background-size: 167%;
+    background-position: right;
+}
+.custom-select{
+    display: block;
+}
+.encargo{
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+.formularioPatrones form{
+    border: 3px solid black;
+    padding: 6%;
+    background-image: url(../access/image/fondo.jpg);
+    background-size: 167%;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.formularioVentas form{
+    border: 3px solid black;
+    padding: 10%;
+    background-image: url(../access/image/fondo.jpg);
+    background-size: 167%;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.formulario form,
+.formularioCorreos form{
+    border: 3px solid black;
+    padding: 11%;
+    background-image: url("../access/image/fondo.jpg");
+    background-size: 167%;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+#boton{
+    width: 40%;
+}
+.redes{
+    min-height: 100%;
+    display: inline-block;
+    text-align: center;
+    padding-top: 5%;
+    color: white;
+    font-size: 24px;
+}
+.contacto{
+    min-height: 100%;
+    display: inline-block;
+    text-align: center;
+    padding-top: 3%;
+    color: white;
+    font-size: 15px;
+}
+#contactanos{
+    font-size: 24px;
+}
+.imagenes{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    margin-left: 5%;
+    margin-right: 1%;
+    margin-bottom: 10%;
+}
+.imagenes #primera{
+    border-bottom-left-radius: 100px;
+    border-top-left-radius: 100px;
+}
+.imagenes #ultima{
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 100px;
+}
+.imagencatalogo{
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    column-gap: 5%;
+    padding: 7%;
+}
+.imgcat p{
+    margin: 0%;
+    padding: 0%;
+}
+.imgcat{
+    display: grid;
+    grid-template-rows: 90%;
+}
+.redes p, .contacto p{
+    color: white;
+}
+i.bi.bi-instagram,i.bi.bi-facebook,i.bi.bi-pinterest{
+    color: white;
+}
+.container.produ{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    margin-top: 1%;
+    gap: 5%;
+}
+#imgreport{
+    border: 2px black solid;
+    min-height: 50%;
+    min-width: 50%;
+    max-width: 100%;
+    max-height: 100%;
+}
+#imgpatron{
+    border: 2px black solid;
+    min-height: 60%;
+    min-width: 60%;
+    max-width: 100%;
+    max-height: 100%;
+}
+#imglispro{
+    border: 2px black solid;
+    min-height: 60%;
+    min-width: 60%;
+    max-width: 100%;
+    max-height: 100%;
+}
+.imagenreporte,
+.imagenpatron,
+.imagenlistapro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagenlistapro{
+    display: grid;
+    grid-template-rows: 12% 88%;
+}
+.mainventas,
+.mainPatrones{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    min-height: 80vh;
+    justify-content: center;
+}
+.form{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(4, 25%);
+    row-gap: 5%;  
+}
+.container{
+    padding: 1%;
+}
+.reg{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(5, 15%);
+    row-gap: 5%;
+    padding-top: 5%;
+}
+.bot{
+    display: grid;
+    justify-items: center;
+    padding-top: 4%;
+}
+select.custom-select.rol{
+    width: 70px;
+    background-color: #EBEBF2;
+    color: black;
+}
+.bot1{
+    display: grid;
+    justify-items: center;
+    padding-top: 7%;
+}
+.nuevomsn{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 15% 35% 15%;
+    gap: 6%;
+    padding-top: 3%;
+}
+.bot2{
+    display: grid;
+    justify-items: center;
+}
+.bot3{
+    display: grid;
+    justify-content: center;
+    padding-top:15%;
+}
+.modal-body input{
+    width: 65%;
+}
+.bot3 #boton{
+    width: 100%;
+}
+.formven{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 45% 45%;
+    row-gap: 25%;
+    column-gap: 5%;
+}
+.bot4{
+    display: grid;
+    justify-items: center;
+    padding-top: 3%;
+}
+section{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding-top: 2%;
+}
+.producto img{
+    width: 46%;
+    height: 90%;
+    margin: 1%;
+    margin-left: 25%;
+}
+.maincarrito{
+    display: grid;
+    justify-items: center;
+    padding-top: 1%;
+}   
+.producto{
+    display: grid;
+    grid-template-rows: repeat(1, 10%);
+}
+section div{
+    height: 100%;
+}
+.division input{
+    height: 50%;
+}
+.division2{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 50% 30%;
+    padding-top: 2%;
+}
+.division2 input{
+    height: 30%;
+}
+textarea #mensajead{
+    height: 50%;
+}
+.producto #cantidad{
+    height: 6%;
+    width: 7%;
+}
+.pagartodo{
+    display: grid;
+    padding-bottom: 1%;
+}
